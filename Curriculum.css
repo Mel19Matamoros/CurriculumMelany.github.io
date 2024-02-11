@@ -1,131 +1,238 @@
 /* Selector */
 h2#Subrayado{
-    text-decoration: underline;
+    text-decoration: underline; /* Aplica subrayado a los elementos h2 con el ID Subrayado */
+}
+
+.txtDerecha {
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+.txtIzquierda {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.heade {
+    background-color: #bad6f1; /* Color de fondo */
+    color: black; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
 }
 
 /* Centrar contenido */
 .txtCentrado {
-    text-align: center;
-  }
-    
-  /* Selector universal */
-  *{
-    box-sizing: border-box;
-    margin: 10;
-  }
-  
-  /* Nueva jerarquía para cabeceras */
-  h1 {
-    font-size: 20px;
-  }
-  
-  h2 {
-    font-size: 18px;
-  }
-  
-  h3 {
-    font-size: 16px;
-  }
+    text-align: center; /* Centra el texto */
+}
 
-  /* Declarando nuevos elementos HTML5 */
-  header, nav, section, aside, footer {
-    display: block;
-  }
+/* Selector universal */
+*{
+    box-sizing: border-box; /* Define el modelo de caja para incluir el borde en el ancho y alto */
+    margin: 10; /* Establece un margen de 10 para todos los elementos */
+}
   
-  /* Creando la caja principal */
-  .main-box {
-    background-color: #ddebf8;;
-    padding: 20px;
-    float:left
-  }
+/* Nueva jerarquía para cabeceras */
+h1 {
+    font-size: 30px; /* Tamaño de fuente para h1 */
+}
   
-  /* Encabezado */
-  header {
-    background-color: #bad6f1;
-    color: black;
-    padding: 10px;
-  }
+h2 {
+    font-size: 18px; /* Tamaño de fuente para h2 */
+}
   
-  /* navegación */
-  nav {
-    background-color: #ffffff;
-    color: white;
-    padding: 10px;
-  }
-  
-  /* Section y aside */
-  section {
-    float: left;
-    width: 70%;
-    padding: 10px;
-  }
-  
-  aside {
-    float: left;
-    background-color: #ddebf8;
-    width: 30%;
-    padding: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-    float:left
-  }
-  
-  /* Footer */
-  footer {
-    clear: both;
-    background-color: #eef5fc;
-    color: black;
-    padding: 10px;
-  }
-  
-  /* Últimos toques */
-  .last-touch {
-    margin-top: 20px;
-  }
-  
-  /* Box-sizing */
-  .box-sizing-example {
-    width: auto;
-    padding: 20px;
-    border: 1px solid black;
-    box-sizing: border-box;
-  }
+h3 {
+    font-size: 16px; /* Tamaño de fuente para h3 */
+}
 
-  .Borde
-  {
-    border: 1px black;
-  }
+/* Declarando nuevos elementos HTML5 */
+header, nav, section, aside, footer, img {
+    display: block; /* Define elementos HTML5 como elementos de bloque */
+}
+  
+/* Creando la caja principal */
+.main-box {
+    background-color: #ddebf8; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    float: center; /* Flota a la izquierda */
+}
+  
+/* Encabezado */
+header {
+    background-color: #bad6f1; /* Color de fondo */
+    color: black; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+}
+  
+/* Navegacion */
+nav {
+    background-color: #ffffff; /* Color de fondo */
+    padding: 8px; /* Espaciado interno */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+nav a {
+    text-decoration: none; /* Quita la decoración de texto */
+    color: black; /* Color del texto */
+    padding: 5px 10px; /* Espaciado dentro del enlace */
+    border: 1px solid #dddddd; /* Borde alrededor del enlace */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 5px; /* Espaciado entre enlaces */
+}
+
+/* Aplica un margen inferior solo a los enlaces del primer conjunto */
+nav:first-child a {
+    margin-bottom: 10px; /* Ajusta este valor según necesites */
+}
+
+/* Aplica un margen inferior solo a los enlaces del segundo conjunto */
+nav:last-child a {
+    margin-bottom: 20px; /* Ajusta este valor según necesites */
+}
+
+/* Section y aside */
+section {
+    float: left; /* Flota a la izquierda */
+    width: 70%; /* Ancho del 70% */
+    padding: 10px; /* Espaciado interno */
+}
+  
+aside {
+    float: left; /* Flota a la izquierda */
+    background-color: #ddebf8; /* Color de fondo */
+    width: 30%; /* Ancho del 30% */
+    padding: 10px; /* Espaciado interno */
+    margin-left: 10%; /* Margen izquierdo */
+    margin-right: 10%; /* Margen derecho */
+    float:left; /* Flota a la izquierda */
+}
+  
+/* Footer */
+footer {
+    clear: both; /* Borra los flotadores */
+    background-color: #eef5fc; /* Color de fondo */
+    color: black; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+}
+  
+/* Últimos toques */
+.last-touch {
+    margin-top: 20px; /* Margen superior */
+}
+  
+/* Box-sizing */
+.box-sizing-example {
+    width: auto; /* Ancho automático */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid black; /* Borde sólido negro de 1px */
+    box-sizing: border-box; /* Define el modelo de caja para incluir el borde en el ancho y alto */
+}
+
+.Borde
+{
+    border: 1px black; /* Borde sólido negro de 1px */
+}
 
 /* Contenido Tarea 1 mejorado */
 
 /* Plantilla */
 .container {
-    max-width: 1200px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    
-  }
-.container-main 
-{
-    display: flex;
-    background-color: #cbe0f5;
+    max-width: 1400px; /* Ancho máximo */
+    display: flex; /* Muestra como flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 10px; /* Espaciado interno */
+    background-color: #bad6f1; /* Color de fondo */
 }
 
-.container-tabla
-{
-    margin-left: 25%;
+.container-main {
+    display: flex; /* Muestra como flexbox */
+    padding: 10px; /* Espaciado interno */
+    background-color: #267bcf; /* Color de fondo */
+}
 
+/* Estilo para la clase de contenedor de la tabla */
+.container-tabla {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilo para las celdas de encabezado y datos */
+.container-tabla th,
+.container-tabla td {
+    border: 1px solid #dddddd; /* Borde de 1px sólido con color gris */
+    padding: 10px; /* Espacio interno de 10px alrededor del contenido */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para las celdas de encabezado */
+.container-tabla th {
+    background-color: #072b77; /* Color de fondo del encabezado */
+    color: white; /* Texto en color blanco para contrastar */
+    font-weight: bold; /* Texto en negrita para resaltar */
+}
+
+/* Estilo para las filas del cuerpo de la tabla */
+.container-tabla tbody tr {
+    background-color: #f2f2f2; /* Color de fondo para todas las filas */
+}
+
+/* Estilo para filas del cuerpo de la tabla cuando se pasa el mouse por encima */
+.container-tabla tbody tr:hover {
+    background-color: #ddd; /* Cambio de color de fondo al pasar el mouse */
+}
+
+/* Estilos para un contenedor que utiliza flexbox para organizar sus elementos */
+.containere {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos de manera uniforme, dejando espacio alrededor de los extremos */
+    /* Cambia esto a 'space-between' si prefieres que haya más espacio entre las tablas */
+}
+
+/* Estilos para la tabla contenida en el contenedor */
+.containere-tabla {
+    border-collapse: collapse; /* Fusiona los bordes de las celdas adyacentes */
+    margin: 0 auto; /* Centra el contenido horizontalmente dentro del contenedor */
+}
+
+/* Estilos para todas las tablas */
+table {
+    width: 100%; /* Ocupa el 100% del ancho disponible del contenedor */
+}
+
+/* Estilos para encabezados de tabla y celdas */
+th, td {
+    padding: 8px; /* Espaciado interno de 8 píxeles para las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border-bottom: 1px solid #ddd; /* Borde inferior de 1 píxel sólido con un color gris claro */
+}
+
+/* Estilos para los encabezados de tabla */
+th {
+    background-color: #f2f2f2; /* Color de fondo gris claro para los encabezados de tabla */
+}
+   
+.container img {
+    margin: 0 auto; /* Margen automático en los lados */
+    display: block; /* Muestra como bloque */
+    max-width: 100%; /* Ancho máximo del 100% */
+    height: auto; /* Altura automática */
+    background-color: #bad6f1; /* Color de fondo */
 }
 
 img {
-    float: left;
-    margin-right: 80px;
-    width: 100px;
-    height: 200x;
+    float: left; /* Flota a la izquierda */
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    margin-right: 20px; /* Margen derecho */
+    display: flex; /* Muestra como flexbox */
+    align-items: center; /* Centra verticalmente */
+    background-color: #bad6f1; /* Color de fondo */
 }
 
 .destacado {
-    font-weight: bold; /* Hace que el texto sea negrita */
-    font-size: 1.2em; /* Ajusta el tamaño del texto, puedes cambiar el valor según sea necesario */
+    font-weight: bold; /* Hace el texto en negrita */
+    font-size: 1.2em; /* Tamaño de fuente */
+}
+
+[colorfondo= "color-lightblue"] {
+    background-color: white; /* Color de fondo */
 }
