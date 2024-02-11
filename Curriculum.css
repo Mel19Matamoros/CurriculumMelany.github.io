@@ -48,9 +48,11 @@ header, nav, section, aside, footer, img {
   
 /* Creando la caja principal */
 .main-box {
-    background-color: #ddebf8; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    float: center; /* Flota a la izquierda */
+    background-color: #dee7f0; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    float: right; /* Flota a la izquierda */
+    width: 35%; /* Ancho del 30% */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
   
 /* Encabezado */
@@ -62,29 +64,38 @@ header {
   
 /* Navegacion */
 nav {
-    background-color: #ffffff; /* Color de fondo */
+    background-color: #f4f4f4; /* Color de fondo */
     padding: 8px; /* Espaciado interno */
     display: flex; /* Utiliza el modelo de caja flexible */
     flex-direction: column; /* Apila los elementos verticalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 nav a {
     text-decoration: none; /* Quita la decoración de texto */
-    color: black; /* Color del texto */
+    color: #333; /* Color del texto */
     padding: 5px 10px; /* Espaciado dentro del enlace */
-    border: 1px solid #dddddd; /* Borde alrededor del enlace */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-bottom: 5px; /* Espaciado entre enlaces */
+    border: 1px solid #ddd; /* Borde alrededor del enlace */
+    border-radius: 20px; /* Bordes más redondeados */
+    margin-bottom: 10px; /* Espaciado entre enlaces */
+    transition: all 0.3s ease; /* Transición suave */
 }
 
-/* Aplica un margen inferior solo a los enlaces del primer conjunto */
-nav:first-child a {
-    margin-bottom: 10px; /* Ajusta este valor según necesites */
+nav a:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el ratón */
 }
 
-/* Aplica un margen inferior solo a los enlaces del segundo conjunto */
-nav:last-child a {
-    margin-bottom: 20px; /* Ajusta este valor según necesites */
+/* Estilo específico para el primer conjunto */
+.nav-primero a {
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo específico para el segundo conjunto */
+.nav-segundo a {
+    background-color: #2ecc71; /* Color de fondo */
+    color: #fff; /* Color del texto */
 }
 
 /* Section y aside */
@@ -96,18 +107,19 @@ section {
   
 aside {
     float: left; /* Flota a la izquierda */
-    background-color: #ddebf8; /* Color de fondo */
+    background-color: #dee7f0; /* Color de fondo */
     width: 30%; /* Ancho del 30% */
     padding: 10px; /* Espaciado interno */
     margin-left: 10%; /* Margen izquierdo */
     margin-right: 10%; /* Margen derecho */
     float:left; /* Flota a la izquierda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
   
 /* Footer */
 footer {
     clear: both; /* Borra los flotadores */
-    background-color: #eef5fc; /* Color de fondo */
+    background-color: #dee7f0; /* Color de fondo */
     color: black; /* Color del texto */
     padding: 10px; /* Espaciado interno */
 }
@@ -138,14 +150,20 @@ footer {
     display: flex; /* Muestra como flexbox */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    padding: 10px; /* Espaciado interno */
+    padding: 5px; /* Espaciado interno */
     background-color: #bad6f1; /* Color de fondo */
+}
+
+.container-Principal {
+    display: flex; /* Muestra como flexbox */
+    padding: 5px; /* Espaciado interno */
+    background-color: #2982dba1; /* Color de fondo */
 }
 
 .container-main {
     display: flex; /* Muestra como flexbox */
     padding: 10px; /* Espaciado interno */
-    background-color: #267bcf; /* Color de fondo */
+    background-color: #bad6f1; /* Color de fondo */
 }
 
 /* Estilo para la clase de contenedor de la tabla */
@@ -153,6 +171,7 @@ footer {
     display: inline-block;
     vertical-align: top;
     margin-right: 20px; /* Ajusta este valor según sea necesario */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 /* Estilo para las celdas de encabezado y datos */
@@ -184,6 +203,7 @@ footer {
 .containere {
     display: flex; /* Utiliza el modelo de caja flexible */
     justify-content: space-around; /* Distribuye el espacio entre los elementos de manera uniforme, dejando espacio alrededor de los extremos */
+    background-color: #bad6f1;
     /* Cambia esto a 'space-between' si prefieres que haya más espacio entre las tablas */
 }
 
@@ -219,13 +239,14 @@ th {
 }
 
 img {
-    float: left; /* Flota a la izquierda */
-    width: 200px; /* Ancho de la imagen */
-    height: auto; /* Altura automática */
-    margin-right: 20px; /* Margen derecho */
-    display: flex; /* Muestra como flexbox */
-    align-items: center; /* Centra verticalmente */
-    background-color: #bad6f1; /* Color de fondo */
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #bad6f1;
 }
 
 .destacado {
