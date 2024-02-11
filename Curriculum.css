@@ -1,0 +1,131 @@
+/* Selector */
+h2#Subrayado{
+    text-decoration: underline;
+}
+
+/* Centrar contenido */
+.txtCentrado {
+    text-align: center;
+  }
+    
+  /* Selector universal */
+  *{
+    box-sizing: border-box;
+    margin: 10;
+  }
+  
+  /* Nueva jerarquía para cabeceras */
+  h1 {
+    font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+
+  /* Declarando nuevos elementos HTML5 */
+  header, nav, section, aside, footer {
+    display: block;
+  }
+  
+  /* Creando la caja principal */
+  .main-box {
+    background-color: #ddebf8;;
+    padding: 20px;
+    float:left
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #bad6f1;
+    color: black;
+    padding: 10px;
+  }
+  
+  /* navegación */
+  nav {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Section y aside */
+  section {
+    float: left;
+    width: 70%;
+    padding: 10px;
+  }
+  
+  aside {
+    float: left;
+    background-color: #ddebf8;
+    width: 30%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    float:left
+  }
+  
+  /* Footer */
+  footer {
+    clear: both;
+    background-color: #eef5fc;
+    color: black;
+    padding: 10px;
+  }
+  
+  /* Últimos toques */
+  .last-touch {
+    margin-top: 20px;
+  }
+  
+  /* Box-sizing */
+  .box-sizing-example {
+    width: auto;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+
+  .Borde
+  {
+    border: 1px black;
+  }
+
+/* Contenido Tarea 1 mejorado */
+
+/* Plantilla */
+.container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+  }
+.container-main 
+{
+    display: flex;
+    background-color: #cbe0f5;
+}
+
+.container-tabla
+{
+    margin-left: 25%;
+
+}
+
+img {
+    float: left;
+    margin-right: 80px;
+    width: 100px;
+    height: 200x;
+}
+
+.destacado {
+    font-weight: bold; /* Hace que el texto sea negrita */
+    font-size: 1.2em; /* Ajusta el tamaño del texto, puedes cambiar el valor según sea necesario */
+}
